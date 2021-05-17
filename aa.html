@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.csss">
+    <title>Document</title>
+</head>
+<body>
+    <div class="w3-container">
+        <p><br/></p>
+        <table class="w3-table w3-bordered w3-striped">
+        <thead>
+            <tr class="w3-green">
+                <th>ifsc</th>
+                <th>bank_id</th>
+                <th>branch</th>
+                <th>address</th>
+                <th>city</th>
+                <th>district</th>
+                <th>state</th>
+        
+            </tr>
+        
+        </thead>
+        
+        <tbody id="mydata">
+            <tr>
+                <td>[[ifsc]]</td>
+                <td>[[bank_id]]</td>
+                <td>[[branch]]</td>
+                <td>[[address]]</td>
+                <td>[[city]]</td>
+                <td>[[district]]</td>
+                <td>[[state]]</td>
+        
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+    <script src="jquery.min.js"></script>
+    <script src="jquery.miranda.min.js"></script>
+    <script>
+        
+
+        var branches=[
+            {"ifsc":"ABHY0065001"},
+            {"bank_id":60},
+            {"branch":"RTGS-HO"},
+            {"address":"ABHYUDAYA BANK BLDG., B.NO.71, NEHRU NAGAR, KURLA (E), MUMBAI-400024"},
+            {"city":"MUMBAI"},
+            {"district":"GREATER MUMBAI"},
+            {"state":"MAHARASHTRA"}
+
+        ];
+        $("#mydata").mirinda.js(branches);
+
+
+    </script>
+</body>
+
+</html>
